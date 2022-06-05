@@ -6,3 +6,10 @@
 <div><span>Course Period: </span>{{ course.period }}</div>
 <div><label>Course In View:
     <input [(ngModel)]="course.course_title" placeholder="name" /></label></div>
+
+<h2>My Course List</h2>
+<ul class="courses">
+  <li *ngFor="let course of courses">
+    <span>{{course.course_id}}</span> {{course.course_title}}
+  </li>
+</ul>

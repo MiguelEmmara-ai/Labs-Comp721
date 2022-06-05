@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../course';
+import { COURSES } from '../test-course';
 
 @Component({
   selector: 'app-courses',
@@ -15,6 +16,8 @@ export class CoursesComponent implements OnInit {
     period!: "Wednesday 4-6 PM",
     lecturer!: "Dr. Jian Yu"
   };
+
+  courses = COURSES;
 
   constructor() { }
 
