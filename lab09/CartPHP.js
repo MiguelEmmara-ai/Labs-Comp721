@@ -5,7 +5,6 @@ if (window.XMLHttpRequest) {
     xHRObject = new ActiveXObject("Microsoft.XMLHTTP");
 }
 
-
 function getData() {
     if ((xHRObject.readyState == 4) && (xHRObject.status == 200)) {
         var serverResponse = xHRObject.responseXML;

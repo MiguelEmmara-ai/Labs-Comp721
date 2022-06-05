@@ -1,22 +1,99 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <script type="text/javascript" src="CartPHP.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <br/>
-    <img id="cover" src="begaspnet.jpg" />
-    <br />
-    <br />
-    <b>Book:</b><span id="book">Beginning ASP.NET with CSharp</span><br />
-    <b>Authors: </b><span id="authors"> Hart, Kauffman, Sussman, Ullman</span>
-    <br /><b>ISBN: </b><span id="ISBN">0764588508</span>
-    <br /><b>Price: </b><span id="price">$39.99</span>
-    <br /><br />
-    <a href="#" onclick="AddRemoveItem('Add');">Add to Shopping Cart</a>
-    <br /><br />
-    <span id="cart"></span>
+    <div class="container mt-3">
+        <div class="row d-flex justify-content-center mb-3">
+            <div class="col-lg-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="begaspnet.jpg" class="card-img-top" alt="begaspnet">
+                    <div class="card-body">
+                        <h5 class="card-title">Beginning ASP.NET with CSharp</h5>
+                        <p class="card-text">ASP.NET 2.0 is an amazing technology that allows you to develop web sites
+                            and applications with very little hassle, and its power and depth enable it to host even the
+                            most complex applications available.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Authors: Hart, Kauffman, Sussman, Ullman</li>
+                        <li class="list-group-item">ISBN: 0764588508</li>
+                        <li class="list-group-item">Price: $39.99</li>
+                    </ul>
+                    <div class="card-body">
+                        <button class="btn btn-primary" onclick="AddItem('${i}');">Add to Shopping Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="begaspnet.jpg" class="card-img-top" alt="begaspnet">
+                    <div class="card-body">
+                        <h5 class="card-title">Beginning ASP.NET with CSharp</h5>
+                        <p class="card-text">ASP.NET 2.0 is an amazing technology that allows you to develop web sites
+                            and applications with very little hassle, and its power and depth enable it to host even the
+                            most complex applications available.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Authors: Hart, Kauffman, Sussman, Ullman</li>
+                        <li class="list-group-item">ISBN: 0764588508</li>
+                        <li class="list-group-item">Price: $39.99</li>
+                    </ul>
+                    <div class="card-body">
+                        <button class="btn btn-primary" onclick="AddItem('${i}');">Add to Shopping Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="begaspnet.jpg" class="card-img-top" alt="begaspnet">
+                    <div class="card-body">
+                        <h5 class="card-title">Beginning ASP.NET with CSharp</h5>
+                        <p class="card-text">ASP.NET 2.0 is an amazing technology that allows you to develop web sites
+                            and applications with very little hassle, and its power and depth enable it to host even the
+                            most complex applications available.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Authors: Hart, Kauffman, Sussman, Ullman</li>
+                        <li class="list-group-item">ISBN: 0764588508</li>
+                        <li class="list-group-item">Price: $39.99</li>
+                    </ul>
+                    <div class="card-body">
+                        <button class="btn btn-primary" onclick="AddItem('${i}');">Add to Shopping Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-10">
+                <br>
+                <table class="table table-striped" id="cart">
+                    <tr>
+                        <th>Book</th>
+                        <th>ISBN</th>
+                        <th>Quantity</th>
+                        <th>Remove from shopping cart</th>
+                    </tr>
+                </table>
+                <br>
+                <span id="total-cost"></span>
+                <br>
+                <button type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+</script>
 
 </html>

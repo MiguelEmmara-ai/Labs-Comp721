@@ -52,4 +52,3 @@ function toXml($MDA)
     $strXml = $doc->saveXML();
     return $strXml;
 }
-?>
