@@ -9,7 +9,19 @@
 
 <h2>My Course List</h2>
 <ul class="courses">
-  <li *ngFor="let course of courses">
+  <li *ngFor="let course of courses" (click)="onSelect(course)" [class.selected]="course === selectedCourse">
     <span>{{course.course_id}}</span> {{course.course_title}}
   </li>
 </ul>
+
+<div *ngIf="selectedCourse">
+  <div><span>Course ID: </span>{{ selectedCourse.course_id }}</div>
+  <div><span>Course ID: </span>{{ selectedCourse.period }}</div>
+  <div><span>Course Lecturer: </span>{{ selectedCourse.lecturer }}</div>
+  <div>
+    <label>
+      Course Title:
+      <input [(ngModel)]="selectedCourse.course_title" placeholder="title" />
+    </label>
+  </div>
+</div>

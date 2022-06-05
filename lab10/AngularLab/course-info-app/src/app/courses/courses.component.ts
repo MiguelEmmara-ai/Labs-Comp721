@@ -17,6 +17,11 @@ export class CoursesComponent implements OnInit {
     lecturer!: "Dr. Jian Yu"
   };
 
+  selectedCourse?: Course;
+  onSelect(course: Course): void {
+    this.selectedCourse = course;
+  }
+
   courses = COURSES;
 
   constructor() { }
