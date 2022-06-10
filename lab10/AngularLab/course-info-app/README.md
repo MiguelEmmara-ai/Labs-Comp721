@@ -1,3 +1,6 @@
+## Screenshots
+![Screenshot 1](https://github.com/MiguelEmmara-ai/Labs-Comp721/blob/master/lab10/AngularLab/course-info-app/screenshots/screencapture-localhost-4200-2022-06-10-19_35_25.png)
+
 # CourseInfoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
